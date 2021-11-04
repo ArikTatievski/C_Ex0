@@ -23,7 +23,7 @@ libclassloops.so: advancedClassificationLoop.o basicClassification.o
 libclassrec.a: advancedClassificationRecursion.o basicClassification.o
 	$(AR) -rcs libclassrec.a advancedClassificationRecursion.o basicClassification.o
 libclassloops.a: advancedClassificationLoop.o basicClassification.o
-	$(AR) -rcs libclassrec.a advancedClassificationLoop.o basicClassification.o
+	$(AR) -rcs libclassloops.a advancedClassificationLoop.o basicClassification.o
 main.o: main.c NumClass.h
 	$(CC) $(FLAGS) -c main.c
 basicClassification.o: basicClassification.c NumClass.h
