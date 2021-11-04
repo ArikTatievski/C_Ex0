@@ -7,8 +7,8 @@ FLAGS= -Wall -g
 
 all: mains maindloop maindrec
 loops: libclassloops.a
-recursive: libclassrec.a
 loopd: libclassloops.so
+recursive: libclassrec.a
 recursived: libclassrec.so
 mains: main.o libclassrec.a
 	$(CC) $(FLAGS) -o mains main.o libclassrec.a
