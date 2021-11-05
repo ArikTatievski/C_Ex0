@@ -31,6 +31,6 @@ advancedClassificationLoop.o: advancedClassificationLoop.c NumClass.h
 advancedClassificationRecursion.o: advancedClassificationRecursion.c NumClass.h
 	$(CC) $(FLAGS) -c advancedClassificationRecursion.c
 
-.PHONY:
+.PHONY: clean all
 clean:
 	rm -f *.o *.a *.so mains maindloop maindrec
