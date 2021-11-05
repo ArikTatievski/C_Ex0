@@ -1,10 +1,9 @@
-#include "stdio.h"
-#include "math.h"
+#include <stdio.h>
 #include "NumClass.h"
 
 int main(){
     int n, m;
-    scanf("%d %d" ,&n, &m);
+    scanf("%d%d" ,&n, &m);
     int temp;
     if (n>m){
         temp=n;
