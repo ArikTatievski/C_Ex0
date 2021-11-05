@@ -1,11 +1,9 @@
 CC=gcc
 AR=ar
-OBJECTS_MAIN=main.o
-OBJECTS_LIB=mylib.o
 FLAGS= -Wall -g
 
 
-all: mains maindloop maindrec
+all: loops loopd recursive recursived mains maindloop maindrec
 loops: libclassloops.a
 loopd: libclassloops.so
 recursive: libclassrec.a
